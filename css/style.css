@@ -75,6 +75,22 @@ img {
   margin: -1px;
 }
 
+.main {
+  height: 600px;
+  max-width: 1600px;
+  margin: 0 auto;
+  background: var(--bg-color);
+  padding: 200px 0;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bgimage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -166,11 +182,6 @@ img {
 .href:hover,
 .href:focus {
   color: var(--color-acent);
-}
-
-.main {
-  background: var(--bg-color);
-  padding: 200px 0;
 }
 
 .main-head {
