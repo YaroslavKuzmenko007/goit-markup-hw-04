@@ -24,7 +24,7 @@
     <header class="header">
       <div class="container navigation">
         <nav class="main-nav">
-          <a href="#" lang="en" class="head"
+          <a href="index.html" lang="en" class="head"
             >Web<span class="black">Studio</span></a
           >
           <ul class="menu">
@@ -32,7 +32,7 @@
               <a class="menu-link" href="index.html">Студія</a>
             </li>
             <li class="menu-item">
-              <a class="menu-link" href="portfolio.html">Портфоліо</a>
+              <a class="menu-link" href="#">Портфоліо</a>
             </li>
             <li class="menu-item">
               <a class="menu-link" href="#">Контакти</a>
@@ -42,11 +42,15 @@
         <ul class="contact">
           <li class="contact-item">
             <a href="maito:info@devstudio.com" class="contact-mail"
+              ><svg class="contact-envelope-icon" width="16" height="12">
+                <use href="./images/symbol-defs.svg#icon-envelope"></use></svg
               >info@devstudio.com</a
             >
           </li>
           <li class="contact-item">
             <a href="tel:+380961111111" class="contact-tel"
+              ><svg class="contact-smartphone-icon" width="10" height="16">
+                <use href="./images/symbol-defs.svg#icon-smartphone"></use></svg
               >+38 096 111 11 11</a
             >
           </li>
@@ -77,7 +81,7 @@
           </ul>
           <ul class="portfolio">
             <li class="portfolio-item">
-              <a href="#">
+              <a class="portfolio-link" href="#">
                 <img src="./images/laptop.jpg" alt="Фото лептопа" />
                 <div class="portfolio-discription">
                   <h2 class="portfolio-head">Технокряк</h2>
@@ -86,7 +90,7 @@
               </a>
             </li>
             <li class="portfolio-item">
-              <a href="#">
+              <a class="portfolio-link" href="#">
                 <img
                   src="./images/poster.jpg"
                   alt="Постер баскетбольного матчу"
@@ -102,7 +106,7 @@
               </a>
             </li>
             <li class="portfolio-item">
-              <a href="#">
+              <a class="portfolio-link" href="#">
                 <img
                   src="./images/restaurant.jpg"
                   alt="Логотип ресторану"
@@ -118,7 +122,7 @@
               </a>
             </li>
             <li class="portfolio-item">
-              <a href="#">
+              <a class="portfolio-link" href="#">
                 <img
                   src="./images/headphones.jpg"
                   alt="Навушники"
@@ -134,7 +138,7 @@
               </a>
             </li>
             <li class="portfolio-item">
-              <a href="#">
+              <a class="portfolio-link" href="#">
                 <img
                   src="./images/boxes.jpg"
                   alt="Фото подарункових коробок"
@@ -151,7 +155,7 @@
               </a>
             </li>
             <li class="portfolio-item">
-              <a href="#">
+              <a class="portfolio-link" href="#">
                 <img
                   src="./images/monitor.jpg"
                   alt="Фото сайта на моніторі"
@@ -167,7 +171,7 @@
               </a>
             </li>
             <li class="portfolio-item">
-              <a href="#"
+              <a class="portfolio-link" href="#"
                 ><img
                   src="./images/magasin.jpg"
                   alt="Фото журнола"
@@ -183,7 +187,7 @@
               </a>
             </li>
             <li class="portfolio-item">
-              <a href="#"
+              <a class="portfolio-link" href="#"
                 ><img
                   src="./images/lable.jpg"
                   alt="Фото лейби"
@@ -199,7 +203,7 @@
               </a>
             </li>
             <li class="portfolio-item">
-              <a href="#">
+              <a class="portfolio-link" href="#">
                 <img
                   src="./images/notebook.jpg"
                   alt="Фото ноутбука за яким працює людина"
@@ -219,35 +223,69 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
-        <a href="#" lang="en" class="head"
-          >Web<span class="white">Studio</span></a
-        >
-        <address class="address">
-          <ul class="contact white">
-            <li class="contact-item">
-              <a
-                href="https://goo.gl/maps/3M9KfxRMza1noYhj8"
-                target="_blank"
-                class="href"
-                >м. Київ, пр-т Лесі Українки, 26</a
-              >
-            </li>
+      <div class="container footer-content">
+        <div>
+          <a href="#" lang="en" class="head"
+            >Web<span class="white">Studio</span></a
+          >
+          <address class="address">
+            <ul class="contact white">
+              <li class="contact-item">
+                <a
+                  href="https://goo.gl/maps/3M9KfxRMza1noYhj8"
+                  target="_blank"
+                  class="href"
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
 
-            <li class="contact-item">
-              <a
-                href="maito:info@devstudio.com"
-                class="contact-mail footer-mail"
-                >info@devstudio.com</a
-              >
+              <li class="contact-item">
+                <a
+                  href="maito:info@devstudio.com"
+                  class="contact-mail footer-mail"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="contact-item">
+                <a href="tel:+380961111111" class="contact-tel footer-tel"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="footer-connect">
+          <h2 class="footer-connect-head">приєднуйтесь</h2>
+          <ul class="footer-soc-list">
+            <li class="footer-soc-item">
+              <a href="" class="footer-soc-link"
+                ><svg class="team-soc-icon" width="20" height="20">
+                  <use
+                    href="./images/symbol-defs.svg#icon-instagram"
+                  ></use></svg
+              ></a>
             </li>
-            <li class="contact-item">
-              <a href="tel:+380961111111" class="contact-tel footer-tel"
-                >+38 096 111 11 11</a
-              >
+            <li class="footer-soc-item">
+              <a href="" class="footer-soc-link"
+                ><svg class="team-soc-icon" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use></svg
+              ></a>
+            </li>
+            <li class="footer-soc-item">
+              <a href="" class="footer-soc-link"
+                ><svg class="team-soc-icon" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+            <li class="footer-soc-item">
+              <a href="" class="footer-soc-link"
+                ><svg class="team-soc-icon" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-linkedin"></use></svg
+              ></a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>

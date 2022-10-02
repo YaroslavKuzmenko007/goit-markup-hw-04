@@ -8,6 +8,7 @@
   --btn-hover: #188ce8;
   --btn-main-color: #f5f4fa;
   --bg-section: #f5f4fa;
+  --icon-color: #afb1b8;
 }
 
 body {
@@ -166,6 +167,12 @@ img {
   text-decoration: none;
   color: var(--main-color-font);
 }
+
+.header .contact {
+  display: flex;
+  align-items: baseline;
+}
+
 .contact-mail,
 .contact-tel {
   text-decoration: none;
@@ -173,6 +180,12 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
+  fill: var(--secondary-color);
+}
+
+.contact-envelope-icon,
+.contact-smartphone-icon {
+  margin-right: 10px;
 }
 
 .menu-link:hover,
@@ -184,6 +197,7 @@ img {
 .href:hover,
 .href:focus {
   color: var(--color-acent);
+  fill: var(--color-acent);
 }
 
 .main-head {
@@ -328,9 +342,74 @@ img {
   color: var(--secondary-color);
 }
 
+.team-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.team-soc-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--icon-color);
+}
+
+.team-soc-link:hover,
+.team-soc-link:focus {
+  background-color: var(--color-acent);
+  fill: var(--color-white);
+}
+
+/* .team-soc-link:hover .team-soc-icon,
+.team-soc-link:focus .team-soc-icon {
+  fill: var(--color-white);
+} */
+
+/* ------------- Partners-------------------- */
+.clients-section {
+  padding: 94px 0;
+}
+
+.clients {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients-item {
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  gap: 30px;
+}
+
+.clients-link {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--icon-color);
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border: 1px solid var(--color-acent);
+  fill: var(--color-acent);
+}
+
+/* ------------- Footer -------------------- */
 .footer {
   background-color: var(--bg-color);
   padding: 60px 0;
+}
+
+.footer-content {
+  display: flex;
+  align-items: baseline;
 }
 
 .footer-mail,
@@ -349,6 +428,43 @@ img {
 
 .address .contact-item:last-child {
   margin-bottom: 0;
+}
+
+.footer-connect {
+  margin-left: 70px;
+}
+
+.footer-connect-head {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-white);
+  margin-bottom: 20px;
+}
+
+.footer-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.footer-soc-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--color-white);
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color: var(--color-acent);
 }
 
 .href {
@@ -406,6 +522,16 @@ img {
 
 .portfolio-item {
   flex-basis: calc((100% - 60px) / 3);
+}
+
+.portfolio-link {
+  display: block;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-discription {
