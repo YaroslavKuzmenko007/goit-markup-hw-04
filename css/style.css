@@ -27,7 +27,7 @@ body {
 .white {
   color: var(--color-white);
 }
-
+/*------------------------------ General -----------------------*/
 p,
 h1,
 h2,
@@ -61,6 +61,16 @@ img {
   padding: 0 15px;
   margin: 0 auto;
   /* outline: 2px solid red; */
+}
+
+.menu-item,
+.contact-item,
+.benefits,
+.team,
+.our-work,
+.nav-btn,
+.portfolio-item {
+  list-style: none;
 }
 
 .visually-hiden {
@@ -109,55 +119,6 @@ img {
   margin-left: 50px;
 }
 
-.main-nav {
-  display: flex;
-  align-items: center;
-}
-
-.navigation {
-  display: flex;
-  align-items: center;
-}
-
-.navigation .contact {
-  margin-left: auto;
-}
-
-/* -------- Hero section ---------------------*/
-.hero {
-  height: 600px;
-  max-width: 1600px;
-  margin: 0 auto;
-  background: var(--bg-color);
-  padding: 200px 0;
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/bgimage.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.menu-item,
-.contact-item,
-.benefits,
-.team,
-.our-work,
-.nav-btn,
-.portfolio-item {
-  list-style: none;
-}
-
-.our-team {
-  background-color: var(--bg-section);
-}
-
-.portfolio-item a {
-  text-decoration: none;
-}
-
 .menu-item {
   font-weight: 500;
   line-height: 1.14;
@@ -170,7 +131,7 @@ img {
 
 .header .contact {
   display: flex;
-  align-items: baseline;
+  align-items: center;
 }
 
 .contact-mail,
@@ -198,6 +159,43 @@ img {
 .href:focus {
   color: var(--color-acent);
   fill: var(--color-acent);
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation .contact {
+  margin-left: auto;
+}
+
+.header-mail,
+.header-tel {
+  display: flex;
+  justify-content: center;
+}
+
+/* -------- Hero section ---------------------*/
+.hero {
+  height: 600px;
+  max-width: 1600px;
+  margin: 0 auto;
+  background: var(--bg-color);
+  padding: 200px 0;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bgimage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .main-head {
@@ -290,6 +288,8 @@ img {
   color: var(--secondary-color);
 }
 
+/* ---------------- Exemples of work ------------------- */
+
 .second-head {
   font-weight: 700;
   font-size: 36px;
@@ -304,6 +304,7 @@ img {
   margin-bottom: 94px;
 }
 
+/*--------------------------- our-team ---------------*/
 .team-head {
   font-weight: 500;
   font-size: 16px;
@@ -312,6 +313,10 @@ img {
 
 .our-team {
   padding: 94px 0;
+}
+
+.our-team {
+  background-color: var(--bg-section);
 }
 
 .team {
@@ -476,7 +481,7 @@ img {
   line-height: 1.71;
   font-style: normal;
 }
-
+/* ------------------section-portfolio --------------------*/
 .section-portfolio {
   padding: 94px 0;
 }
@@ -522,6 +527,10 @@ img {
 
 .portfolio-item {
   flex-basis: calc((100% - 60px) / 3);
+}
+
+.portfolio-item a {
+  text-decoration: none;
 }
 
 .portfolio-link {
