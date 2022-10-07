@@ -111,10 +111,6 @@ img {
   margin-left: 50px;
 }
 
-.header .contact {
-  display: flex;
-}
-
 .header .contact-item + .contact-item {
   margin-left: 50px;
 }
@@ -178,7 +174,7 @@ img {
 .header-mail,
 .header-tel {
   display: flex;
-  justify-content: center;
+  align-items: center;
 }
 
 /* -------- Hero section ---------------------*/
